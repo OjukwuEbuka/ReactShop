@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Route} from 'react-router-dom';
+import {BrowserRouter, Route, Link} from 'react-router-dom';
 
 import data from '../services/data';
 import HomeScreen from './HomeScreen';
@@ -16,7 +16,7 @@ const App = () => {
                         <button onClick={openMenu}>
                             &#9776;
                         </button>
-                        <a href="index.html">Shopland</a>
+                        <Link to="/">Shopland</Link>
                     </div>
                     <div className="header-links">
                         <a href="cart.html">Cart</a>
